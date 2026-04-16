@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vaibhav ❤️ Shagun Wedding</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+h1,h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(255,105,180,0.7), rgba(255,0,0,0.6)),
+    url('./couple.jpg') center/cover no-repeat;
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 15px gold;
+}
+
+/* BUTTON */
+.btn {
+  padding: 12px 25px;
+  background: linear-gradient(45deg, gold, #d4af37);
+  border-radius: 25px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
+}
+
+/* IMAGE */
+.couple-img img {
+  width: 260px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(255,105,180,0.4);
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.7);
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(212,175,55,0.3);
+}
+
+/* RSVP */
+.rsvp {
+  background: linear-gradient(135deg,#ffb6c1,#ff69b4);
+  color: white;
+}
+
+/* STUDIO */
+.studio {
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+/* SECTION */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 🎵 MUSIC -->
+<audio id="music" loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_4c1e42b3f3.mp3" type="audio/mp3">
+</audio>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Vaibhav ❤️ Shagun</h1>
+  <p>Two souls, one royal beginning</p>
+  <button class="btn" onclick="startExperience()">Enter Celebration</button>
+</section>
+
+<!-- IMAGE -->
+<section class="couple-img">
+  <img src="./couple.jpg">
+</section>
+
+<!-- DETAILS -->
+<section>
+  <h2>Event Details</h2>
+  <div class="card">Date: <b>7 May</b></div>
+  <div class="card">Venue: <b>Hotel Asha - Kannauj</b></div>
+  <div class="card">Time: <b>8 PM</b></div>
+</section>
+
+<!-- VENUE -->
+<section>
+  <h2>Venue</h2>
+  <a href="https://share.google/zxRB1DVK7dEPAf6WY" target="_blank" class="btn">
+    View Location 📍
+  </a>
+</section>
+
+<!-- RSVP -->
+<section class="rsvp">
+  <h2>RSVP</h2>
+  <p><b>Verma Family</b></p>
+  <p>We would be delighted by your presence</p>
+</section>
+
+<!-- STUDIO -->
+<section class="studio">
+  <p><b>Photography by Prakash Studio</b></p>
+  <p>📞 9793886556, 9838698665</p>
+  <p>📍 Shivrajpur, Kanpur Nagar</p>
+  <p>
+    <a href="https://www.instagram.com/_prakashphotography_" target="_blank">
+      @_prakashphotography_
+    </a>
+  </p>
+</section>
+
+<script>
+function startExperience() {
+  let music = document.getElementById("music");
+  music.play().catch(() => {});
+  window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
